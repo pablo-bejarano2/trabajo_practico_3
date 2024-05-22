@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario</title>
+		<link rel="stylesheet" href="/css/estilos.css">
+	</head>
+	<body>
+		<header id="encabezado">
+			<h1 class="titulo">Formulario de creación de usuario</h1>
+			<nav class="nav">
+				<a href="/" class="nav-link">Pagina principal</a>
+				<a href="/form" class="nav-link">Formulario de usuario</a>
+			</nav>
+		</header>
+		<main class="cuerpo">
+		<form id="formulario" action="" method="post">
+			<fieldset class="form-seccion">
+			<legend class="form-legenda">Información personal</legend>
+			<label class="etiqueta" for="dni">DNI: </label>
+			<input type="text" id="dni" name="dni" required> 
+			
+			<label class="etiqueta" for="nombres">Nombres: </label>
+			<input type="text" id="nombres" name="nombres" required> 
+			
+			<label class="etiqueta" for="apellidos">Apellidos: </label>
+			<input type="text" id="apellidos" name="apellidos" required> 
+			
+			<label class="etiqueta" for="fnacimiento">Fecha de nacimiento: </label>
+			<input type="date" id="fnacimiento" name="fnacimiento" required> 
+			
+			<span>
+				<fieldset class="form-seccion">
+					<legend class="form-legenda">Genero: </legend>
+					<input type="radio" id="femenino" value="femenino" name="genero">
+					<label class="etiqueta" for="gender">Femenino</label>
+					<input type="radio" id="masculino" value="masculino" name="genero">
+					<label class="etiqueta" for="masculino">Masculino</label>
+					<input type="radio" id="otro" value="otro" name="genero">
+					<label class="etiqueta" for="otro">Otro</label>
+				</fieldset>	
+			</span>
+			
+			<label	class="etiqueta" for="correo">Correo: </label>
+			<input type="email" id="correo" name="correo" required> 
+			
+			<label class="etiqueta" for="domicilio">Domicilio</label>
+			<input type="text" id="domicilio" name="domicilio" required> 
+			
+			<label	class="etiqueta" for="provincia">Provincia</label>
+			<select id="provincia" name="provincia" required>
+				<option value="buenosAires">Buenos Aires</option>
+				<option value="ciudadAutonoma">Ciudad autónoma de Buenos Aires</option>
+				<option value="catamarca">Catamarca</option>
+				<option value="chaco">Chaco</option>
+				<option value="chubut">Chubut</option>
+				<option value="cordoba">Córdoba</option>
+				<option value="corrientes">Corrientes</option>
+				<option value="entreRios">Entre Rios</option>
+				<option value="formosa">Formosa</option>
+				<option value="jujuy">Jujuy</option>
+				<option value="laPampa">La Pampa</option>
+				<option value="laRioja">La Rioja</option>
+				<option value="mendoza">Mendoza</option>
+				<option value="misiones">Misiones</option>
+				<option value="neuquen">Neuquén</option>
+				<option value="rioNegro">Río Negro</option>
+				<option value="salta">Salta</option>
+				<option value="sanJuan">San Juan</option>
+				<option value="sanLuis">San Luis</option>
+				<option value="santaCruz">Santa Cruz</option>
+				<option value="santaFe">Santa Fe</option>
+				<option value="santiagoDelEstero">Santiago del Estero</option>
+				<option value="tierraDelFuego">Tierra Del Fuego</option>
+				<option value="tucuman">Tucumán</option>
+			</select>
+			
+			<label	class="etiqueta" for="ntelefono">Número de teléfono:</label>
+			<input type="text" id="ntelefono"> 
+			
+			<fieldset class="form-seccion">
+				<legend class="form-legenda">Categoría de Interés</legend>
+				<input type="checkbox" id="java" name="java">
+				<label	class="etiqueta" for="java">Java</label>
+				<input type="checkbox" id="javascript" name="javascript">
+				<label	class="etiqueta" for="javascript">Javascript</label>
+				<input type="checkbox" id="python" name="python">
+				<label	class="etiqueta" for="python">Python</label>
+				<input type="checkbox" id="c" name="c">
+				<label	class="etiqueta" for="c">C++</label>
+			</fieldset>
+			 
+			
+			<label	class="etiqueta" for="sugerencias">Sugerencias para la empresa: </label>
+			<input type="textArea" id="sugerencias" rows="5" cols="5" name="sugerencias"> 
+			
+			<label	class="etiqueta" for="contrasenia">Contraseña: </label>
+			<input type="password" id="contrasenia" name="contrasenia" required>
+			
+			<input type="checkbox" id="terminosCondicions" name="terminosCondicions" required> 
+			<label 	class="etiqueta"for="terminosCondicions">Acepto los terminos y condiciones?</label>
+			
+			<input type="checkbox" id="infoExtra" name="infoExtra"> 
+			<label	class="etiqueta" for="infoExtra">Acepto recibir información relativa a la empresa</label>
+			
+			
+			<input type="button" id="input" value"Enviar"> 
+			
+		</fieldset>	
+		</form>
+		</main>		
+		<footer id="pie-pagina">
+			<h3 class="subtitulo">Informacion de contacto:</h3>
+			<p  class="parrafo">Correo: pablobejarano2112@gmail.com</p>
+			<a class="piepagina-anchor" href="https://github.com/pablo-bejarano2">Github</a>
+		</footer>
+	</main>
+</html>
