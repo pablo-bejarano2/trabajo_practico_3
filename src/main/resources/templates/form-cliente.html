@@ -14,7 +14,7 @@
 			</nav>
 		</header>
 		<main class="cuerpo">
-		<form id="formulario" action="" method="post">
+		<form id="formulario" action="/" method="post">
 			<fieldset class="form-seccion">
 			<legend class="form-legenda">Información personal</legend>
 			<label class="etiqueta" for="dni">DNI: </label>
@@ -29,17 +29,17 @@
 			<label class="etiqueta" for="fnacimiento">Fecha de nacimiento: </label>
 			<input type="date" id="fnacimiento" name="fnacimiento" required> 
 			
-			<span>
-				<fieldset class="form-seccion">
+			
+			<fieldset class="form-seccion">
 					<legend class="form-legenda">Genero: </legend>
 					<input type="radio" id="femenino" value="femenino" name="genero">
-					<label class="etiqueta" for="gender">Femenino</label>
+					<label class="etiqueta" for="femenino">Femenino</label>
 					<input type="radio" id="masculino" value="masculino" name="genero">
 					<label class="etiqueta" for="masculino">Masculino</label>
 					<input type="radio" id="otro" value="otro" name="genero">
 					<label class="etiqueta" for="otro">Otro</label>
-				</fieldset>	
-			</span>
+			</fieldset>	
+			
 			
 			<label	class="etiqueta" for="correo">Correo: </label>
 			<input type="email" id="correo" name="correo" required> 
@@ -49,6 +49,7 @@
 			
 			<label	class="etiqueta" for="provincia">Provincia</label>
 			<select id="provincia" name="provincia" required>
+				<option ></option>
 				<option value="buenosAires">Buenos Aires</option>
 				<option value="ciudadAutonoma">Ciudad autónoma de Buenos Aires</option>
 				<option value="catamarca">Catamarca</option>
@@ -92,19 +93,18 @@
 			 
 			
 			<label	class="etiqueta" for="sugerencias">Sugerencias para la empresa: </label>
-			<input type="textArea" id="sugerencias" rows="5" cols="5" name="sugerencias"> 
+			<textarea name="sugerencias" id="sugerencias" rows="5" cols="5" ></textarea>
 			
 			<label	class="etiqueta" for="contrasenia">Contraseña: </label>
 			<input type="password" id="contrasenia" name="contrasenia" required>
 			
 			<input type="checkbox" id="terminosCondicions" name="terminosCondicions" required> 
-			<label 	class="etiqueta"for="terminosCondicions">Acepto los terminos y condiciones?</label>
+			<label 	class="etiqueta" for="terminosCondicions">Acepto los terminos y condiciones?</label>
 			
 			<input type="checkbox" id="infoExtra" name="infoExtra"> 
 			<label	class="etiqueta" for="infoExtra">Acepto recibir información relativa a la empresa</label>
 			
-			
-			<input type="button" id="input" value"Enviar"> 
+			<input type="button" id="input" value="Enviar"> 
 			
 		</fieldset>	
 		</form>
@@ -114,5 +114,4 @@
 			<p  class="parrafo">Correo: pablobejarano2112@gmail.com</p>
 			<a class="piepagina-anchor" href="https://github.com/pablo-bejarano2">Github</a>
 		</footer>
-	</main>
 </html>
